@@ -1,0 +1,43 @@
+.boxImages {
+    .titleInfoBox {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        color: #333333;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+
+    .contentImgBox {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .imgLayoutBox {
+            width: 99px;
+            height: 130px;
+            border: 1px solid rgba(0, 0, 0, 0.079);
+            margin-right: 20px;
+            margin-bottom: 10px;
+            overflow: hidden;
+            border-radius: 3px;
+            cursor: pointer;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+:global {
+    .ReactModal__Overlay.ReactModal__Overlay--after-open {
+        z-index: 1051 !important;
+    }
+}

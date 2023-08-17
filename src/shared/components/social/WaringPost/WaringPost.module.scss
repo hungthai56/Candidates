@@ -1,0 +1,48 @@
+.PopupTooltipWarning{
+  position: relative;
+  .PopupTooltip{
+      position: absolute;
+      bottom: -45px;
+      right:20px;
+      margin-left: -20px;
+      padding: 4px 8px;
+      gap: 5px;
+      isolation: isolate;
+
+      width: 106px;
+      height: 36px;
+
+      /* hrm/default/white */
+
+      background: #FFFFFF;
+      /* APP shadow button */
+
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+      border-radius: 3px;
+
+      /* Inside auto layout */
+
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+      display: none;
+      z-index: 11;
+
+      p{
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 14px;
+          display: flex;
+          align-items: center;
+          text-align: center;
+
+          /* hrm/neutral/text */
+
+          color: #333333;
+      }
+  }
+
+  &:hover .PopupTooltip{
+      display: block;
+  }
+}

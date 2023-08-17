@@ -1,0 +1,36 @@
+.salesman-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .select-section {
+    display: flex;
+    align-items: center;
+
+    .select .select-border .select-input {
+      border: unset;
+      height: auto;
+    }
+
+    .select .option-custom-line .select-input {
+      justify-content: unset;
+    }
+
+    .select .option-custom-line .select-list-modal {
+      top: 22px;
+    }
+
+    .select .option-custom-line .select-title {
+      margin-right: 5px;
+      font-weight: $fw-light;
+    }
+
+    .select-salesman {
+      min-width: 250px;
+    }
+  }
+
+  .clock-wrapper {
+    font-weight: $fw-light;
+  }
+}

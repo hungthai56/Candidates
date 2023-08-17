@@ -1,0 +1,47 @@
+.HeaderLeft {
+    .iconHeaderSetting {
+        width: 36px;
+        height: 36px;
+        background-color: #ffd500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .titleSystem {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        /* identical to box height */
+
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+
+        /* hrm/neutral/text */
+
+        color: #333333;
+        margin-left: 22px;
+        margin-right: 17px;
+    }
+
+    .title {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        /* identical to box height */
+
+        display: flex;
+        align-items: center;
+
+        /* hrm/neutral/text */
+
+        color: #333333;
+    }
+
+    .line {
+        border-right: 1.5px solid #464545;
+        height: 24px;
+    }
+}

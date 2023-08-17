@@ -1,0 +1,34 @@
+.PromotionTestPopup{
+    width: 770px;
+
+    .main{
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        max-height: 80vh;
+        overflow: auto;
+        .PromotionTestPopupFlex{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 70%;
+        }
+
+        .FormCheckBox{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 50%;
+        }
+    }
+
+    .lineHeight{
+        line-height: 20px;
+        white-space: pre-line;
+    }
+}
+
+
+.bases__margin-right--15{
+    margin-right: 15px !important;
+}

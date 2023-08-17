@@ -1,0 +1,24 @@
+.notification-popup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &-body {
+    min-width: 300px;
+    padding: 30px 0;
+    .text-popup {
+
+      font-size: 20px;
+      line-height: 22px;
+      text-align: center;
+      margin-bottom: 0;
+      font-weight: 400;
+    }
+  }
+
+  &-footer {
+    width: 211px;
+    height: 53px;
+    bottom: 0;
+  }
+}

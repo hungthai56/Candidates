@@ -1,0 +1,33 @@
+.drop-down-link {
+  .drop-down-link-map {
+    background-color: $white;
+    .sidebar-link-drop {
+      background-color: $white;
+      padding-left: 30px;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      font-size: $fontSize-normal;
+      -webkit-transition: height 300ms;
+      transition: height 300ms;
+      &:hover {
+        color: $black;
+        background: $yellow-menu-left;
+        cursor: pointer;
+      }
+      .sidebar-label-drop {
+        display: none;
+      }
+      .sidebar-label-drop-active-sidebar-label {
+        margin-left: 16px;
+        color: $black;
+        font-size: $fontSize-normal;
+      }
+    }
+  }
+}
+
+.drop-down-sub-menu{
+  -webkit-transition: height 300ms; 
+  transition: height 300ms;
+}

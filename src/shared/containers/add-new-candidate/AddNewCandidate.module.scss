@@ -1,0 +1,45 @@
+.box-container{
+    display: grid;
+    flex-direction: column;
+    row-gap: 20px;
+    padding-bottom: 50px;
+    .w-40{
+        width: 33.3%;
+    }
+}
+
+.custom-form-upload{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.custom-form-input{
+    width: 80%;
+}
+
+.uploadImageSection>div{
+    text-align: center;
+}
+
+.flex_button{
+    display: flex;
+    align-items: end;
+}
+
+.custom-icon-upload p{
+    margin-top: 24px;
+    color: #E3E3E3;
+}
+
+:global{
+    .MuiOutlinedInput-notchedOutline{
+        top: 0px !important;
+    }
+}
+
+:global{
+    .customFormImages{
+        margin: auto !important;
+    }
+}

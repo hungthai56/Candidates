@@ -1,0 +1,47 @@
+.product-detail-container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+
+  .content-body{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+
+    .content-body-left{
+      width: 400px;
+    }
+    
+    .content-body-right{
+      display: flex;
+      flex-direction: column;
+      width: calc((100% - 10px) - 400px);
+      gap: 10px;
+    }
+  }
+
+  .tab-table-wrap{
+    background-color: $background-color-box;
+
+    .box-group{
+      
+      .tab-list{
+        width: 500px;
+        padding-left: 20px;
+
+        .tab-list-item{
+          width: 50%;
+          color: $color-title-black;
+          font-weight: $fw-normal;
+        }
+        .MuiTabs-indicator{
+          background-color: $yellow;
+        }
+      }
+    }
+    .tab-table{
+      padding: 15px 20px;
+    }
+  }
+}

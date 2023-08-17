@@ -1,0 +1,142 @@
+.tree-select {
+    padding: 4px 10px;
+    gap: 4px;
+    width: 100%;
+    height: 32px;
+    border: 1px solid #d8d7d7;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    height: 32px;
+
+    &:focus,
+    &:active {
+        border-color: #138300;
+    }
+
+    &.active {
+        border-color: #138300;
+    }
+
+    .row {
+        position: absolute;
+        right: 10px;
+        top: auto;
+        bottom: auto;
+
+        &.active {
+            transform: rotate(180deg);
+        }
+    }
+
+    .close{
+        position: absolute;
+        right: 30px;
+        top: auto;
+        bottom: auto;
+        cursor: pointer;
+    }
+
+    .input {
+        position: absolute;
+        top: auto;
+        bottom: auto;
+        left: 10px;
+        outline: none;
+        border: none;
+        height: 30px;
+        width: 75%;
+        text-overflow: ellipsis;
+
+        &::placeholder {
+            color: #E3E3E3;
+            font-size: 14px;
+        }
+    }
+}
+
+.tree-select-container {
+    width: 100%;
+    position: relative;
+
+    .drop-down-tree-select {
+        position: absolute;
+        top: 37px;
+        width: 100%;
+        max-height: 300px;
+        z-index: 2;
+        background-color: white;
+        overflow-y: auto;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08), 0px 2px 6px rgba(0, 0, 0, 0.05), 0px 1px 3px rgba(0, 0, 0, 0.15);
+        border-radius: 3px;
+        padding: 7px 0px;
+
+        .ul-item {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            display: flex;
+            align-items: center;
+            color: #333333;
+            padding: 7px 10px 7px 7px;
+            cursor: pointer;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            column-gap: 5px;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            p{
+                margin-bottom: 0px;
+                word-spacing: normal;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            &.active {
+                background-color: #e3e3e3be;
+                font-weight: 600;
+            }
+
+            .row-item{
+                width: 14px;
+                height: 14px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &.row-item-active{
+                    // transform: rotateX(90deg);
+                }
+            }
+        }
+    }
+}
+
+.error .tree-select {
+    border: 1px solid #FF2C00;
+}
+
+.text-error{
+    color: #FF2C00;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 0px;
+    margin-top: 7px;
+}
+
+.disabled {
+    pointer-events: none;
+    background-color: #E3E3E3;
+    input {
+        pointer-events: none;
+        background-color: #E3E3E3;
+    }
+    svg {
+        pointer-events: none;
+        fill: #E3E3E3;
+    }
+}

@@ -1,0 +1,29 @@
+.product-detail-box{
+  height: 274px;
+
+  .product-detail-box-wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+  
+    .product-detail-box-content{
+      display: flex;
+      gap: 60px;
+      .key{
+        width: 200px;
+        font-weight: $fw-light;
+        color: $gray;
+      }
+      .value{
+        font-weight: $fw-light;
+
+      }
+      &::after{
+        position: absolute;
+        content: ":";
+        left: 220px;
+      }
+    }
+  }
+}

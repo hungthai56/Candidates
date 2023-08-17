@@ -1,0 +1,18 @@
+.group-btn-print{
+  border: 0.5px dotted $gray;
+  width: 144px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: $border-radius-button;
+  cursor: pointer;
+  gap: 15px;
+
+  .btn-print{
+    outline: none;
+    border: none;
+    background-color: white;
+    font-weight: $fw-light;
+  }
+}

@@ -1,0 +1,68 @@
+.list-product-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  
+  .form-content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    column-gap: 20px;
+    row-gap: 10px;
+    margin-bottom: 15px;
+
+    .form-content-item{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: calc((100% - 40px) / 3);
+
+      .text-label{
+        margin-bottom: 10px;
+      }
+
+      .select-input{
+        padding-right: 10px;
+      }
+    }
+    
+  }
+  .form-btn-search{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    .search-btn{
+      width: 98px;
+    }
+  }
+
+}
+
+.list-product-table{
+  
+  .trHead-table{
+    border: 1px solid $gray-light-400;
+    background-color: $gray-light;
+
+    .classNameTh{
+      line-height: 50px;
+      font-weight: $fw-normal;
+      font-size: $fontSize-normal;
+    }
+    
+  }
+  .classNameTrBody {
+    
+    .isCheckbox{
+      margin: auto;
+    }
+  }
+  .group_pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+}

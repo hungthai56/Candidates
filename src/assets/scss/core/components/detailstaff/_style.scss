@@ -1,0 +1,94 @@
+.Detail-staff {
+  position: relative;
+  top: 5px;
+  .detail-block {
+    padding: 15px;
+  }
+  .Detail-staff-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 10px;
+    text-transform: uppercase;
+  }
+  .Detail-staff-info {
+    display: flex;
+    justify-content: space-between;
+    .Detail-staff-name {
+      display: flex;
+      flex-direction: column;
+      line-height: 35px;
+      font-size: 16px;
+      font-family: 'Roboto';
+      width: 247px;
+      color: #707070;
+    }
+    .Detail-staff-user_infor {
+      display: flex;
+      flex-direction: column;
+      line-height: 35px;
+      font-size: 16px;
+      font-family: 'Roboto';
+      width: 270px;
+      color: #333;
+    }
+    .Detail-staff-Department {
+      display: flex;
+      flex-direction: column;
+      line-height: 35px;
+      font-size: 16px;
+      font-family: 'Roboto';
+      width: 172px;
+      color: #707070;
+    }
+    .Detail-staff-Department_infor {
+      display: flex;
+      flex-direction: column;
+      line-height: 35px;
+      font-size: 16px;
+      font-family: 'Roboto';
+      width: 270px;
+      color: #333;
+    }
+  }
+  .history-work {
+    background-color: #fff;
+    padding: 15px;
+    position: relative;
+    top: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    .history-work_text {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 14px;
+      margin-top: 10px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+  }
+}
+.combo-box-demo {
+  height: 5px;
+}
+.css-17vbkzs-MuiFormControl-root-MuiTextField-root {
+  // margin-top: 0px !important;
+  // margin-bottom: 0px !important;
+  .MuiOutlinedInput-input {
+    height: 16px;
+  }
+}
+// .css-1w385w5-MuiFormControl-root-MuiTextField-root{
+//    margin-top: 0px !important;
+//   //  margin-bottom: 0px !important;
+// }
+.css-mmst5v {
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  top: 10px;
+}

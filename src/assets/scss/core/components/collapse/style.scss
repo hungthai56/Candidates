@@ -1,0 +1,52 @@
+.collapse-container {
+    display: flex;
+    cursor: pointer;
+    .icon-right-collapse {
+        // animation: transform 1s rotate;
+        // transform: rotate(45deg);
+        
+    }
+    .icon-right-collapse.down {
+        svg {
+            animation: transform 0.2s rotate;
+            transform: rotate(90deg);
+        }
+    }
+    .collapse-title {
+        font-size:14px;
+        font-weight:550;
+        color: #333333;
+        line-height:26px;
+        margin-left: 10px;
+    }
+    
+}
+.collapse-text-show {
+    // border-top: 1px solid rgb(204, 204, 204);
+    padding: 10px;
+    width: 50%;
+    text {
+        font-size: 12px;
+        margin-top: 10px;      
+    }
+}
+
+.none {
+    display: none;
+}
+
+.input-draft {
+}
+    .draft {
+        display: none;
+    }
+    .colapase-121313:focus .draft{
+        display: block;
+}
+    .colapase-121313:focus .draft{
+        display: block;
+        background-color:red;
+    }
+    // .colapase-121313:focus{
+    //     background-color:red;
+    // }

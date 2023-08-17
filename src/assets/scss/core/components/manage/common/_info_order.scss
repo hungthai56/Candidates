@@ -1,0 +1,30 @@
+.info-order-container{
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  position: relative;
+
+  .wrap-info-order{
+    display: flex;
+
+    .key{
+      width: 50%;
+      font-weight: $fw-light;
+    }
+
+    .value{
+      width: 50%;
+    }
+    &::after{
+      position: absolute;
+      content: ":";
+      left: 124px;
+    }
+    
+    &:first-child{
+      .value{
+        color: $blue-name;
+      }
+    }
+  }
+}

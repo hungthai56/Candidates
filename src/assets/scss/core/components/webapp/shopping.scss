@@ -1,0 +1,73 @@
+.office-bottom{
+    .btn-header-submit{
+      display: flex;
+      text-align: center;
+      align-items: center;
+  
+    }
+    .btn-spacing{
+      cursor: pointer;
+      padding-right: 16px
+    }
+    .text-style{
+      font-size: 12px;
+      color: #333333;
+      text-align: center;
+      margin-top: 6px;
+    }
+    .btn-submit-container {
+        z-index: 1;
+        display: flex;
+        justify-content:space-between;
+        position: fixed;
+        bottom: 0px;
+        left: 10px;
+        background-color: white;
+        width: 100%;
+        padding: 10px 30px;
+        border-top: 1px solid #d8d7d7;
+        align-items: center;
+        .btn-spacing{
+          // padding-right: 15px;
+        }
+        .btn-cancel {
+          width: 100px;
+          height: 40px;
+          color: red;
+        }
+        .btn-submit {
+          // width: 100px;
+          height: 40px;
+          margin-right: 10px;
+        }
+      }
+      .tab_content-left {
+        margin-left: 14%;
+        .tab-content-header {
+          color: #333333;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+        }
+        .tab-content-name {
+          color: #707070;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 12px;
+          line-height: 14px;
+        }
+      }
+      .back-btn {
+        display: flex;
+        align-items: center;
+        .text-back{
+          font-size: 17px;
+          color: #333333;
+          margin-top: 6px;
+        }
+      }
+      .pointer {
+        cursor: pointer;
+      }
+  }

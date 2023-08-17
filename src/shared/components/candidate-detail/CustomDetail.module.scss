@@ -1,0 +1,303 @@
+.recruitment__detail {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.box__status {
+    background-color: #ffffff;
+    border-radius: 3px;
+    padding: 5px 20px;
+    border-bottom: 1px solid var(--neutral-4-line, #D8D7D7);
+
+    &-change {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        column-gap: 10px;
+
+        .button__icon {
+            background: none;
+            border: none;
+
+            span {
+                display: block;
+                font-size: 12px;
+                margin-top: 5px;
+            }
+        }
+    }
+}
+
+.box__detail {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 3px;
+
+    &-title {
+        margin-bottom: 15px;
+
+        p {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 20px;
+            letter-spacing: 0.168px;
+        }
+    }
+
+    &-view {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 20px;
+
+        .itemBoxInfo {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &-content {
+        display: flex;
+        align-items: start;
+    }
+
+    &-image {
+        width: 150px;
+
+        img {
+            height: 140px;
+            width: 112px;
+            object-fit: cover;
+            border-radius: 3px;
+            border: 2px solid #FFCD29;
+        }
+    }
+}
+
+.title__detail {
+    margin: 0;
+    min-width: 150px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.14px;
+    color: #707070;
+}
+
+.table__detail {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 3px;
+
+    &-title {
+        margin-bottom: 15px;
+
+        p {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 20px;
+            letter-spacing: 0.168px;
+        }
+    }
+
+    &-view {
+        table {
+            width: 100%;
+
+            thead {
+                width: 100%;
+                display: block;
+                background: #F2F2F2;
+                padding: 10px 15px;
+                border-bottom: 1px solid var(--neutral-4-line, #D8D7D7);
+
+                th {
+                    display: flex;
+                    justify-content: space-between;
+
+                    td {
+                        width: 25%;
+                    }
+                }
+            }
+
+            tbody {
+                width: 100%;
+                display: block;
+
+                tr {
+                    width: 100%;
+                    padding: 10px 15px;
+                    border-bottom: 1px solid var(--neutral-4-line, #D8D7D7);
+                    display: flex;
+                    justify-content: space-between;
+
+                    td {
+                        width: 25%;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.box__status {
+    position: relative;
+}
+
+.drop_box_status {
+    position: absolute;
+    background: #fff;
+    z-index: 1;
+    right: 0px;
+    top: 50px;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.10);
+    padding: 10px;
+    border-radius: 3px;
+    width: 154px;
+
+    .selectbox_item {
+        padding: 12px 10px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #F6F6F6;
+            border-radius: 3px;
+        }
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.listProductTable {
+    border-bottom: 1px solid #D8D7D7 !important;
+
+    :global {
+        .findx-box .box-content {
+            padding: 0px !important;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+        }
+    }
+}
+
+.tabListIcon {
+    display: flex;
+    position: relative;
+    padding: 0 20px;
+}
+
+.tabList {
+    display: flex;
+    position: relative;
+    padding: 0 20px;
+
+    .tabListItem {
+        font-size: 14px;
+        padding: 10px 20px;
+        min-width: 130px;
+        text-align: center;
+        cursor: pointer;
+        font-weight: 400;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        padding: 14px 20px;
+
+        color: #333333;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+
+
+
+        &.tabListActive {
+            font-weight: bold;
+            background-color: #c7eafe77;
+
+            border-left: 1px solid #d8d7d7;
+            border-right: 1px solid #d8d7d7;
+            border-top: 3px solid #138300;
+            border-bottom: none;
+            border-bottom: none !important;
+            background-color: #EBF7E9;
+
+            &::before{
+                width: 100%;
+                height: 1px;
+                bottom: -1px;
+                background-color: #EBF7E9;
+                position: absolute;
+                content: "";
+            }
+        }
+
+        span {
+            width: 45px;
+            height: 20px;
+            background: #EBF7E9;
+            border-radius: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 10px;
+
+            &.active {
+                background-color: #138300;
+                color: white;
+            }
+        }
+    }
+}
+
+.EarnPointContainer {
+    :global {
+        .findx-box .box-content {
+            padding: 0px 20px !important;
+        }
+    }
+
+    .tabPanel {
+        font-size: 14px;
+        display: none;
+
+        &.selected {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+    }
+}
+
+.disablePaddingTab {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    border-bottom: 1px solid #D8D7D7;
+
+    :global {
+        .box-content {
+            position: relative;
+            bottom: -1px;
+        }
+    }
+}

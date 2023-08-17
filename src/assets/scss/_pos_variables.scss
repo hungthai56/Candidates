@@ -1,0 +1,123 @@
+// /////////    COLORS    ///////////
+// //////////////////////////////////////
+
+$yellow: #ffd500;
+$yellow-menu-left: #f7c100;
+$white: #ffffff;
+$black: #333333;
+$red: #ff2c00;
+$green: #138300;
+$gray: #707070;
+$gray-light-400: #d8d7d7;
+$gray-light: #f2f2f2;
+$gray-background-sale: #e5e5e5;
+$red-pink: #ff3434;
+$blue-link: #007bff;
+$blue-hover-link: #0056b3;
+$gray-line-stepper: #b2b2b2;
+$blue-name:#0054FC;
+
+$green-light: #1ba103;
+$red-pink-light: #ff7070;
+
+$info-color: #3078f1;
+$success-color: #138300;
+$warning-color: #dab600;
+$danger-color: #ff2c00;
+$info-user-color: #0054FC;
+$color-title-black: #262626;
+
+
+$input-color-green: $success-color;
+$input-color-gray: $gray-light-400;
+
+$silver-coin-color: #808080;
+$gold-coin-color: #F7C100;
+
+$color-hover-table: #F9F9F9;
+// /////////    Z-INDEX    ///////////
+// //////////////////////////////////////
+
+$zIndex-common-popup: 1050;
+$zIndex-overlay: 1040;
+$zIndex-sidebar: 1030;
+$zIndex-input-search: 10;
+$zIndex-select: 5;
+$zIndex-overlay-result-input: 1;
+
+// /////////    WIDTH_SIZE   ///////////
+// //////////////////////////////////////
+
+$L: 1170px;
+$XL: 1366px;
+$XXL: 1536px;
+
+// /////////    FONT_SIZE   ///////////
+// //////////////////////////////////////
+
+$fontSize-small: 12px;
+$fontSize-normal: 14px;
+$fontSize-big: 20px;
+$fontSize-big-xl: 24px;
+$fontSize-normal-xl: 16px;
+
+// /////////    FONT_FAMILY   ///////////
+// //////////////////////////////////////
+
+$fontFamily: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+
+// /////////    FONT_WEIGHT   ///////////
+// //////////////////////////////////////
+
+$fw-light: 300;
+$fw-normal: 400;
+$fw-medium: 500;
+$fw-bold: 700;
+
+// /////////    BORDER_RADIUS   ///////////
+// //////////////////////////////////////
+
+$border-radius-5: 5px;
+$border-radius-button: 3px;
+$border-radius-circle: 50%;
+
+// /////////    BORDER_WIDTH   ///////////
+// //////////////////////////////////////
+
+$border-input-width: 0.5px;
+
+// /////////    INPUT_STYLE   ///////////
+// //////////////////////////////////////
+
+$input-height: 32px;
+$input-search-select: 37px;
+
+// /////////    BUTTON_STYLE   ///////////
+// //////////////////////////////////////
+
+$button-height: 40px;
+
+// /////////    BOX_STYLE   /////////////
+// //////////////////////////////////////
+$padding-box: 15px;
+$background-color-box: $white;
+$border-radius-box: 3px;
+$border-title-color: $gray-light-400;
+$border-title-height: 1px;
+
+// /////////    TEXT_LINK_STYLE   ////////
+// //////////////////////////////////////
+$fs-text-link: $fontSize-normal;
+$fw-text-link: $fw-normal;
+$color-text-link: $blue-link;
+$color-hover-text-link: $blue-hover-link;
+
+// /////////    TEXT_LABEL_STYLE   ////////
+// //////////////////////////////////////
+$fs-text-label: $fontSize-normal;
+$fw-text-label: $fw-normal;
+$color-text-label: $black;
+$color-info-text-label: $info-color;
+$color-success-text-label: $success-color;
+$color-warning-text-label: $warning-color;
+$color-danger-text-label: $danger-color;

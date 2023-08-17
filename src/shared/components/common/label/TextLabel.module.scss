@@ -1,0 +1,30 @@
+.text-red-priority {
+    color: #FF2C00;
+    padding-left: 5px;
+}
+
+:global {
+    .findx-text-label {
+        font-size: 14px;
+    }
+}
+
+.custom__new-button {
+    position: relative;
+
+    span {
+        color: var(--default-white, #FFF);
+        text-align: right;
+        font-family: Roboto;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        border-radius: 3px;
+        background: var(--status-yellow, #F2CE13);
+        padding: 0px 4px;
+        position: absolute;
+        top: -5px;
+        right: -30px;
+    }
+}

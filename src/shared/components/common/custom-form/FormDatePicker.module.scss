@@ -1,0 +1,16 @@
+.FormDatePicker{
+    :global{
+        .MuiOutlinedInput-notchedOutline{
+            top: 0px !important;
+        }
+    }
+}
+
+
+.FormDateTimePicker{
+    :global{
+        fieldset{
+            top: 0px !important;
+        }
+    }
+}

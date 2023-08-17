@@ -1,0 +1,50 @@
+.guest-info-wrapper {
+  .guest-select {
+    display: flex;
+    justify-content: space-between;
+
+    .input-search-add-customer {
+      width: 245px;
+    }
+
+    .select {
+      width: 30%;
+    }
+  }
+
+  .guest-point {
+    display: flex;
+    justify-content: space-between;
+
+    .point-wrapper {
+      height: 36px;
+      display: flex;
+      align-items: center;
+      background-color: $gray-light;
+      min-width: 200px;
+      border-radius: $border-radius-5;
+
+      .point-icoin {
+        height: 100%;
+        display: flex;
+        background-color: $gray-light-400;
+        border-radius: $border-radius-5 0 0 $border-radius-5;
+      }
+
+      .point-number {
+        display: flex;
+        align-items: center;
+        padding: 0px 7px;
+
+        .point-value {
+          font-size: $fontSize-normal;
+          min-width: 80px;
+        }
+
+        .money-value {
+          font-size: $fontSize-small;
+        }
+      }
+    }
+  }
+}

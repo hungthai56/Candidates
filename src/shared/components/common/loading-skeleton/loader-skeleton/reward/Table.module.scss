@@ -1,0 +1,50 @@
+.table {
+    :global {
+        .MuiTableCell-root.MuiTableCell-sizeSmall {
+            height: 45px !important;
+            max-height: 45px !important;
+            min-height: 45px !important;
+        }
+
+        table {
+            border-right: 1px solid #D7D8D8;
+        }
+
+        th,
+        td {
+            border-collapse: collapse;
+        }
+
+        td {
+            border-left: 1px solid #D7D8D8;
+
+            td {
+                border-left: none;
+
+                &:last-child {
+                    border-bottom: none;
+                }
+
+                &:first-child {
+                    border-top: 0.5px solid #D7D8D8;
+                }
+            }
+        }
+    }
+}
+
+.TableBodyRowFirst {
+    display: flex !important;
+    :global {
+        .MuiTableCell-root.MuiTableCell-sizeSmall {
+            &:first-child {
+                border-top: none;
+            }
+        }
+    }
+
+}
+
+.TableBodyBottom {
+    border-bottom: 1px solid #D7D8D8;
+}

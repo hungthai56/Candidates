@@ -1,0 +1,28 @@
+.exBill {
+  &-content {
+    table {
+      .border-top--black {
+        border-top: 1px solid black;
+      }
+      .border-bottom--black {
+        border-bottom: 1px solid black;
+      }
+      thead {
+        tr {
+          th {
+            padding: 5px;
+            font-weight: bold;
+            vertical-align: baseline;
+          }
+        }
+      }
+      tbody {
+        tr {
+          td {
+            padding: 5px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.spanning-table{
+  border-left: 1px solid $gray-light-400;
+  border-bottom: 1px solid $gray-light-400;
+  border-right: 1px solid $gray-light-400;
+  padding: 20px ;
+  
+  .wrap-spanning-table{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-left: auto;
+    width: 300px;
+    border-bottom: 1px solid $gray-light-400;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-weight: $fw-light;
+  }
+  .wrap-content{
+    display: flex;
+    margin-left: auto;
+    width: 300px;
+    justify-content: space-between;
+  
+    .wrap-content-price{
+      color: $red;
+      font-size: $fontSize-normal-xl;
+    }
+  }
+}

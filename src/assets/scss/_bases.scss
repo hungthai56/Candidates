@@ -1,0 +1,121 @@
+.bases {
+  @for $i from 10 through 30 {
+    // font-size
+    // ex: bases__font--14
+    @include referPropertyValue(__font--#{$i}, font-size, #{$i}px !important);
+  }
+
+  // ex: bases__font-weight--light
+  &__font-weight {
+    @include referPropertyValue(--light, font-weight, $fw-light !important);
+    @include referPropertyValue(--normal, font-weight, $fw-normal !important);
+    @include referPropertyValue(--medium, font-weight, $fw-medium !important);
+    @include referPropertyValue(--bold, font-weight, $fw-bold !important);
+  }
+
+  @for $i from 0 through 300 {
+    // ex: bases__margin--10
+    // ex: bases__margin-top--10
+    &__margin {
+      @include referPropertyValue(--#{$i}, margin, #{$i}px !important);
+      @include referPropertyValue(-top--#{$i}, margin-top, #{$i}px !important);
+      @include referPropertyValue(-right--#{$i}, margin-right, #{$i}px !important);
+      @include referPropertyValue(-bottom--#{$i}, margin-bottom, #{$i}px !important);
+      @include referPropertyValue(-left--#{$i}, margin-left, #{$i}px !important);
+    }
+    // ex: bases__padding--10
+    // ex: bases__padding-top--10
+    &__padding {
+      @include referPropertyValue(--#{$i}, padding, #{$i}px !important);
+      @include referPropertyValue(-top--#{$i}, padding-top, #{$i}px !important);
+      @include referPropertyValue(-right--#{$i}, padding-right, #{$i}px !important);
+      @include referPropertyValue(-bottom--#{$i}, padding-bottom, #{$i}px !important);
+      @include referPropertyValue(-left--#{$i}, padding-left, #{$i}px !important);
+    }
+
+    // top, right, bottom, left
+    // ex: bases__top--10
+    @include referPropertyValue(__top--#{$i}, top, #{$i}px !important);
+    @include referPropertyValue(__right--#{$i}, right, #{$i}px !important);
+    @include referPropertyValue(__bottom--#{$i}, bottom, #{$i}px !important);
+    @include referPropertyValue(__left--#{$i}, left, #{$i}px !important);
+
+    // width, height, line-height
+    // ex: bases__width--10
+    @include referPropertyValue(__width--#{$i}, width, #{$i}px !important);
+    @include referPropertyValue(__height--#{$i}, height, #{$i}px !important);
+    @include referPropertyValue(__line-height--#{$i}, line-height, #{$i}px !important);
+  }
+
+  // ex: bases__border--gray
+  &__border {
+    @include referPropertyValue(--gray, border, 1px solid $gray !important);
+    @include referPropertyValue("--gray-light-400", border, 1px solid $gray-light-400 !important);
+    @include referPropertyValue("--gray-light", border, 1px solid $gray-light !important);
+    @include referPropertyValue(--black, border, 1px solid $black !important);
+    @include referPropertyValue(--green, border, 1px solid $green !important);
+    // ex: bases__border-top--gray
+    &-top {
+      @include referPropertyValue(--gray, border-top, 1px solid $gray !important);
+      @include referPropertyValue("--gray-light-400", border-top, 1px solid $gray-light-400 !important);
+      @include referPropertyValue("--gray-light", border-top, 1px solid $gray-light !important);
+      @include referPropertyValue(--black, border-top, 1px solid $black !important);
+      @include referPropertyValue(--green, border-top, 1px solid $green !important);
+    }
+    // ex: bases__border-right--gray
+    &-right {
+      @include referPropertyValue(--gray, border-right, 1px solid $gray !important);
+      @include referPropertyValue("--gray-light-400", border-right, 1px solid $gray-light-400 !important);
+      @include referPropertyValue("--gray-light", border-right, 1px solid $gray-light !important);
+      @include referPropertyValue(--black, border-right, 1px solid $black !important);
+      @include referPropertyValue(--green, border-right, 1px solid $green !important);
+    }
+    // ex: bases__border-bottom--gray
+    &-bottom {
+      @include referPropertyValue(--gray, border-bottom, 1px solid $gray !important);
+      @include referPropertyValue("--gray-light-400", border-bottom, 1px solid $gray-light-400 !important);
+      @include referPropertyValue("--gray-light", border-bottom, 1px solid $gray-light !important);
+      @include referPropertyValue(--black, border-bottom, 1px solid $black !important);
+      @include referPropertyValue(--green, border-bottom, 1px solid $green !important);
+    }
+    // ex: bases__border-left--gray
+    &-left {
+      @include referPropertyValue(--gray, border-left, 1px solid $gray !important);
+      @include referPropertyValue("--gray-light-400", border-left, 1px solid $gray-light-400 !important);
+      @include referPropertyValue("--gray-light", border-left, 1px solid $gray-light !important);
+      @include referPropertyValue(--black, border-left, 1px solid $black !important);
+      @include referPropertyValue(--green, border-left, 1px solid $green !important);
+    }
+  }
+
+  // ex: bases__color--gray
+  &__color {
+    @include referPropertyValue(--gray, color, $gray !important);
+    @include referPropertyValue("--gray-light-400", color, $gray-light-400 !important);
+    @include referPropertyValue("--gray-light", color, $gray-light !important);
+    @include referPropertyValue(--black, color, $black !important);
+    @include referPropertyValue(--green, color, $green !important);
+    @include referPropertyValue(--white, color, $white !important);
+    @include referPropertyValue(--yellow, color, $yellow !important);
+    @include referPropertyValue(--gold, color, $gold-coin-color !important);
+    @include referPropertyValue(--silver, color, $silver-coin-color !important);
+  }
+
+  // ex: bases__background--gray
+  &__background {
+    @include referPropertyValue(--gray, background-color, $gray !important);
+    @include referPropertyValue("--gray-light-400", background-color, $gray-light-400 !important);
+    @include referPropertyValue("--gray-light", background-color, $gray-light !important);
+    @include referPropertyValue(--black, background-color, $black !important);
+    @include referPropertyValue(--green, background-color, $green !important);
+    @include referPropertyValue(--white, background-color, $white !important);
+    @include referPropertyValue(--yellow, background-color, $yellow !important);
+  }
+
+  // ex: bases__position--relative
+  &__position {
+    @include referPropertyValue(--relative, position, relative !important);
+    @include referPropertyValue(--absolute, position, absolute !important);
+    @include referPropertyValue(--sticky, position, sticky !important);
+  }
+}

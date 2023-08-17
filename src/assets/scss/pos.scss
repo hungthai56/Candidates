@@ -1,0 +1,151 @@
+@import 'mixin';
+@import 'pos_variables';
+@import 'library/components/assets/scss/variables';
+@import 'bases';
+@import './core/style';
+// body {
+//     font-family: $fontFamily !important;
+//     color: $black;
+//     font-weight: $fw-normal !important;
+//     font-size: $fontSize-normal !important;
+// }
+// * {
+//     margin: 0px;
+//     padding: 0px;
+//     box-sizing: border-box;
+// }
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.m-0 {
+    margin: 0px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+legend {
+    width: unset;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+body {
+    background: #000;
+    color: #333 !important;
+}
+
+.swiper {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-slide {
+    background-size: cover;
+    background-position: center;
+}
+
+.mySwiper2 {
+    height: 80%;
+    width: 100%;
+}
+
+.mySwiper {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+.mySwiper .swiper-slide {
+    width: 25%;
+    height: 100%;
+    // opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+    opacity: 0.7;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35));
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+// text line
+.text-two-line {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+//common double scroll table
+.wrapper-box-scroll-top {
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.wrapper-box-scroll {
+    height: 0.5px;
+}
+
+.font-weight-500 {
+    font-weight: 500 !important;
+}

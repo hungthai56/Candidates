@@ -1,0 +1,65 @@
+.change_status {
+    position: relative;
+
+    .selectbox_list {
+        position: absolute;
+        background: #fff;
+        z-index: 999;
+        box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.10);
+        padding: 10px;
+        width: 150px;
+        left: -5px;
+
+        .selectbox_item {
+            padding: 10px 5px;
+            border-radius: 3px;
+            &:hover{
+                background: #F6F6F6;
+            }
+        }
+    }
+
+    .selectbox{
+        position: relative;
+        .select__button{
+            padding: 5px 22px 5px 8px;
+            border-radius: 3px;
+            color: #fff;
+            width: 106px;
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .icon__drop{
+            position: absolute;
+            top: 5px;
+            right: 5px;
+        }
+
+        .roll_icon{
+            transform: rotate(180deg);
+        }
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .show {
+        display: block;
+    }
+}
+
+.kanban_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    .btn_kanban{
+        background: none;
+        border: none;
+        p{
+            margin-top: 5px;
+        }
+    }
+}

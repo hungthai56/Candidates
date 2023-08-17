@@ -1,0 +1,144 @@
+.buttonReadMore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    gap: 3px;
+
+    width: 32px;
+    height: 32px;
+
+    /* ERP FM/Primary/Yellow */
+
+    background: #FFD500;
+    border-radius: 4px;
+
+
+    position: relative;
+    cursor: pointer;
+
+    &:hover {
+        .dropdown {
+            // display: block;
+        }
+    }
+
+    .dropdown {
+        position: absolute;
+        top: 36px;
+        right: 0;
+        min-width: 200px;
+        min-height: 40px;
+
+        /* ERP cũ/default/white */
+
+        background: #FFFFFF;
+        /* Web/1 - Card WEB */
+
+        box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.201);
+        border-radius: 3px;
+        // display: none;
+        z-index: 111;
+        padding: 10px;
+
+        div{
+            
+            padding: 4px;
+            &:hover{
+                background: #F7F7F7;
+                border-radius: 3px;
+            }
+        }
+
+    }
+}
+
+.bases__font--14{
+    font-size: 14px !important;
+}
+
+.button-search{
+    :global{
+        .btn-search{
+            width: 85px;
+        }
+
+        .btn-select{
+            div{
+                padding-top: 0px !important;
+            }
+        }
+    }
+}
+
+.button-common {
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #333333;
+    text-align: center;
+    min-width: 85px;
+    height: 32px !important;
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 1;
+    transition-duration: 0.3s;
+    &.background-green {
+      background-color: #138300;
+      color: #ffffff;
+      border-color: transparent;
+      &:hover {
+        background-color: #1ba103;
+      }
+    }
+    &.border-green {
+      color: #138300;
+      border: 1px solid #138300;
+      &:hover {
+        color: #1ba103;
+        background-color: #ffffff;
+        border: 1px solid #1ba103;
+      }
+    }
+    &.background-red {
+      background-color: #ff3434;
+      color: #ffffff;
+      border-color: transparent;
+      &:hover {
+        background-color: #ff7070;
+      }
+    }
+    &.border-red {
+      color: #FF3434;
+      border: 1px solid #FF3434;
+      &:hover {
+        color: #ff7070;
+        background-color: #ffffff;
+        border: 1px solid #ff7070;
+      }
+    }
+    &.background-orange {
+      background-color: #FF7029;
+      color: #ffffff;
+      border-color: transparent;
+  
+      &:hover {
+        background-color: #FF884D;
+      }
+    }
+    .icon-style {
+      margin-right: 7px;
+    }
+    .iconRight-style {
+      margin-left: 7px;
+    }
+    &:disabled,
+    &:disabled:hover {
+      cursor: not-allowed;
+      background-color: #F2F2F2 !important;
+      color: #707070 !important;
+      border: 1px solid transparent !important;
+      pointer-events: none;
+        cursor: default;
+    }
+  }

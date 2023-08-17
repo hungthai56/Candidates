@@ -1,0 +1,10 @@
+@mixin referPropertyValue($name, $property, $value) {
+  &#{$name} {
+    #{$property}: $value;
+  }
+  @media (min-width: 600px) {
+    .css-aehl2p {
+      min-height: 50px;
+    }
+  }
+}

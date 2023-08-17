@@ -1,0 +1,51 @@
+.title-checkbox{
+    margin: 0;
+    margin-left: 10px;
+    font-weight: $fw-light;
+    font-size: $fontSize-big;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    color: $black;
+}
+
+.check-box-square {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+
+    label {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: $white;
+        box-sizing: border-box;
+        border: 1px solid $black;
+        box-sizing: border-box;
+        border-radius: 3px;
+        cursor: pointer;
+
+        &.checked-active {
+            background-color: $green;
+            border: unset;
+        }
+
+        .icon-checkbox svg {
+            color: $white;
+        }
+    }
+}
+
+.checkbox-label-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+    p{
+        @extend .title-checkbox
+    }
+}

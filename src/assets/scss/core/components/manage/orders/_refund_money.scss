@@ -1,0 +1,58 @@
+.refund-money{
+
+  .wrap-refund-payment{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  
+    .wrap-refund-payment-content{
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
+      position: relative;
+  
+      .item-content{
+        display: flex;
+  
+        .item-content-title{
+          width: 50%;
+          font-weight: $fw-light;
+        }
+  
+        .item-content-price{
+          width: 50%;
+        }
+        &::after{
+          content: ':';
+          position: absolute;
+          left: 106px;
+        }
+      }
+    }
+    .btn-payment{
+      display: flex;
+      align-items: center;
+      height: 34px;
+      width: 111px;
+      .payment{
+        .background-green{
+          height: 100%;
+          width: 100%;
+        }
+        .classNameContent{
+          font-size: $fontSize-normal;
+        }
+      }
+    }
+  }
+  .status-wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .status-content{
+      display: flex;
+      gap: 15px;
+    }
+  }
+
+}

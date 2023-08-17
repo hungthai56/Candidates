@@ -1,0 +1,19 @@
+.mainPopup{
+    max-height: 50vh;
+    overflow-y: auto;
+    padding: 20px 30px;
+    padding-bottom: 0px;
+}
+
+.paginationPopup{
+    padding: 0px 30px;
+    :global {
+        .MuiTablePagination-actions {
+            display: none !important;
+        }
+        .MuiPagination-ul{
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+    }
+}

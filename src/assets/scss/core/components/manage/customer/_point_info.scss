@@ -1,0 +1,103 @@
+.point-container {
+  height: 100%;
+  .point-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .point-top {
+      display: flex;
+      gap: 20px;
+      border-bottom: 1px solid $gray-light-400;
+      padding-bottom: 10px;
+      position: relative;
+
+      .point-title {
+        font-weight: $fw-light;
+        color: $gray;
+        width: 100px;
+
+        &::after{
+          position: absolute;
+          content: ":";
+          left: 100px;
+        }
+      }
+      .point-value {
+        color: $color-title-black;
+      }
+    }
+
+    .point-silver {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      border-bottom: 1px solid $gray-light-400;
+      padding-bottom: 10px;
+
+      .point-silver-content {
+        display: flex;
+        gap: 20px;
+        position: relative;
+
+        .point-silver-title {
+          width: 100px;
+          font-weight: $fw-light;
+          color: $gray;
+
+          &::after{
+            position: absolute;
+            content: ":";
+            left: 100px;
+          }
+        }
+        .point-silver-value {
+          font-weight: $fw-light;
+          color: $silver-coin-color;
+        }
+        .used {
+          color: $color-title-black;
+        }
+      }
+    }
+
+    .point-title-used {
+      font-weight: $fw-light;
+      font-size: $fontSize-small;
+
+      span {
+        font-weight: $fw-normal;
+      }
+    }
+    .point-gold {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .point-gold-content {
+        display: flex;
+        gap: 20px;
+        position: relative;
+
+        .point-gold-title {
+          width: 100px;
+          color: $gray;
+          font-weight: $fw-light;
+
+          &::after{
+            content: ":";
+            position: absolute;
+            left: 100px;
+          }
+        }
+        .point-gold-value {
+          font-weight: $fw-normal;
+          color: $color-title-black;
+        }
+        .gold {
+          color: $gold-coin-color;
+        }
+      }
+    }
+  }
+}

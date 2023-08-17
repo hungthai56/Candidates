@@ -1,0 +1,20 @@
+.OptionBottom{
+    background-color: white;
+    // position: sticky;
+    // bottom: 0;
+    // box-shadow: -2px -2px 11px rgba(45, 41, 41, 0.131);
+    z-index: 111;
+    .TextIconOption{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        /* identical to box height */
+        display: flex;
+        align-items: center;
+        color: #333333;
+        margin-top: 10px;
+    }
+    .cursorPointer{
+        cursor: pointer;
+    }
+}

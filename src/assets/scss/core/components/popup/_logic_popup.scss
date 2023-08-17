@@ -1,0 +1,45 @@
+.logic-popup {
+  &-header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+
+    &-title {
+      font-size: $fontSize-big;
+      line-height: 24px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+      font-weight: $fw-medium;
+      position: relative;
+
+      .title {
+        font-size: $fontSize-big;
+        width: 100%;
+        text-align: center;
+        font-weight: $fw-normal;
+        line-height: 22px;
+      }
+    }
+  }
+
+  &-body {
+    min-width: 300px;
+  }
+
+  &-footer {
+    padding: 20px;
+    bottom: 0;
+    background-color: white;
+  }
+
+  &-float_btn {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &-child_component {
+    overflow: auto;
+    max-height: 100%;
+  }
+}

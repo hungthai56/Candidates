@@ -1,0 +1,66 @@
+.TableHead{
+    max-height: 38px;
+    position: relative;
+}
+.TableHeadRow{
+    background-color: #F2F2F2;
+    max-height: 38px;
+    position: relative;
+    .FilterColumn{
+        cursor: pointer;
+        // position: relative;
+        z-index: 9;
+    }
+}
+
+.DropdownFilter{
+    min-width: 100px;
+    min-height: 150px;
+    background-color: white;
+    z-index: 55555;
+    border-radius: 2px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 4px rgb(0 0 0 / 25%);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 10;
+    top: 50px;
+    position: absolute;
+    overflow-y: auto;
+    p{
+        cursor: pointer;
+    }
+
+    .DropdownFilterItem{
+        font-size: 14px;
+        color: #333333;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+        min-width: 175px;
+        z-index: 555;
+
+        :global {
+            .MuiCheckbox-root.MuiButtonBase-root.MuiCheckbox-root{
+                padding: 0px !important;
+            }
+        }
+    }
+}
+
+.action-detail{
+    width: 24px;
+    height: 24px;
+    background-color: #FF3434 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg{
+        margin: auto;
+        color: white !important;
+
+    }
+}

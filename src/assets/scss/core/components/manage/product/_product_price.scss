@@ -1,0 +1,33 @@
+.product-price{
+  height: 159px;
+
+  .product-price-wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 15.49px;
+    position: relative;
+    height: 159px;
+  
+   .product-price-content{
+     display: flex;
+     gap: 50px;
+     
+     .key{
+       width: 100px;
+       font-weight: $fw-light;
+       color: $gray;
+
+     }
+     .value{
+       font-weight: $fw-light;
+     }
+  
+     &::after{
+       position: absolute;
+       content: ":";
+       left: 140px;
+     }
+   }
+  
+  }
+}

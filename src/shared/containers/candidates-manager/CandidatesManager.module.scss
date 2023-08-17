@@ -1,0 +1,17 @@
+.custom-for-filter{
+    display: flex;
+    align-items: center;
+    button {
+        border-radius: 3px 0px 0px 3px;
+    }
+    div {
+        border-radius: 0px 3px 3px 0px;
+    }
+}
+
+:global{
+    .findx-box .box-content{
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+}

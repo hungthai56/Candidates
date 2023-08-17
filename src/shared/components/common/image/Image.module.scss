@@ -1,0 +1,11 @@
+.object_fit_cover{
+    object-fit: cover;
+}
+:global {
+   .z-index-lightbox{
+       z-index: 1051
+   }
+   .ReactModal__Overlay.ReactModal__Overlay--after-open{
+    z-index: 1051 !important
+   }
+}

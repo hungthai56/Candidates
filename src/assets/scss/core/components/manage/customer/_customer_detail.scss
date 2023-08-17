@@ -1,0 +1,64 @@
+.customer-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+
+  .customer-content {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+
+    .customer-content-left {
+      width: calc((100% - 10px) - 351px);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .customer-content-right {
+      width: 351px;
+    }
+  }
+
+  .tab-table-wrap {
+    background-color: $background-color-box;
+
+    .box-group {
+      .tab-list {
+        width: 500px;
+        padding-left: 20px;
+
+        .tab-list-item {
+          width: 50%;
+          color: $color-title-black;
+          font-weight: $fw-normal;
+        }
+        .MuiTabs-indicator {
+          background-color: $yellow;
+        }
+      }
+    }
+    .tab-table {
+      padding: 15px 20px;
+
+      .classNameTrHead {
+        .checkbox {
+          text-align: center;
+        }
+      }
+      .classNameTrBody {
+        .isCheckbox {
+          margin: auto;
+        }
+      }
+    }
+
+    .pagination {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: 10px;
+    }
+  }
+}

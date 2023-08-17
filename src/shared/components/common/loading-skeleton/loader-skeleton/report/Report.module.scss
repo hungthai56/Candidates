@@ -1,0 +1,15 @@
+.table {
+    :global {
+        .MuiTableCell-root.MuiTableCell-sizeSmall {
+            border: 1px solid #D7D8D8 !important;
+            border-left: none !important;
+
+            border-top: none !important;
+        }
+
+        .MuiPaper-root.MuiPaper-elevation {
+            border-left: 1px solid #D7D8D8 !important;
+            border-top: 1px solid #D7D8D8 !important;
+        }
+    }
+}

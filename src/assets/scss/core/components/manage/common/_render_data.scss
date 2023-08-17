@@ -1,0 +1,20 @@
+
+.render-detail{
+  display: flex;
+  gap: 10px;
+
+  .render-detail-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+
+    .render-detail-title{
+      font-weight: $fw-normal;
+      line-height: 18px;
+    }
+    .render-detail-code{
+      font-weight: $fw-light;
+    }
+  }
+}

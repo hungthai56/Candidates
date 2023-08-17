@@ -1,0 +1,98 @@
+
+.notification-add-customer {
+  width: 550px;
+  height: 600px;
+  position: relative;
+
+  .notification-popup-header {
+    width: 100%;
+
+    .popup-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .popup-header-title {
+        font-size: $fontSize-big;
+        line-height: 22px;
+        font-weight: $fw-normal;
+      }
+
+      .popup-header-message {
+        font-size: $fontSize-small;
+        line-height: 22px;
+        font-weight: $fw-light;
+      }
+    }
+
+    .close-popup-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+  }
+
+  .notification-popup-body {
+    width: 100%;
+    height: calc(100% - (44px + 40px));
+    padding: 30px 0;
+    margin-bottom: 0;
+    .input-content {
+      display: flex;
+      align-items: center;
+      height: 24px;
+      margin: 15px 0;
+      .radio-pos-label p {
+        font-size: $fontSize-normal;
+      }
+      .content-left {
+        width: calc(100% - 320px);
+        font-size: $fontSize-normal;
+        font-weight: $fw-light;
+        line-height: 22px; 
+      }
+      .data-picker {
+        margin: 20px 0;
+        border: 5px 0;
+      }
+      .required {
+        color: $red;
+      }
+
+      .content-right {
+        display: flex;
+        width: 320px;
+        padding: 0 ;
+      }
+      .date-picker {
+        width: 128px;
+        height: 39px;
+
+        z-index: 1;
+      }
+    }
+    .input-content:first-child {
+      margin-top: 0;
+    }
+  }
+
+  .notification-popup-footer {
+    width: 100%;
+    height: 40px;
+
+    .btn-footer {
+      display: flex;
+      justify-content: space-between;
+
+      .btn {
+        padding: 0;
+        width: 230px;
+
+        .button-white,
+        .button-green {
+          height: 40px;
+        }
+      }
+    }
+  }
+}

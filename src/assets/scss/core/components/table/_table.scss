@@ -1,0 +1,65 @@
+.components {
+  &__table {
+    background-color: $white;
+    &-wrapper {
+      overflow-x: auto !important;
+      max-height: 450px;
+    }
+    &-border {
+      thead {
+        th {
+          vertical-align: middle;
+          position: relative;
+          line-height: 1;
+          height: 38px;
+          padding-left: 20px;
+          padding-right: 20px;
+          white-space: pre !important;
+        }
+      }
+      tbody {
+        tr {
+          border-bottom: 1px solid $gray-light-400;
+          td {
+            line-height: 1px;
+            height: 50px;
+            padding-left: 20px;
+            padding-right: 20px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            vertical-align: middle;
+            font-weight: $fw-normal;
+          }
+          &:hover{
+            background-color: $color-hover-table;
+          }
+        }
+      }
+    }
+    &-btn {
+      &_detail {
+        margin: auto;
+        padding: 0;
+        img {
+          margin-right: 0;
+        }
+      }
+      &_body {
+        padding-top: 11px !important;
+        padding-bottom: 11px !important;
+      }
+    }
+    &-sorted {
+      margin-right: 20px !important;
+      display: inline-block !important;
+      &-icon {
+        cursor: pointer;
+        position: absolute;
+        top: calc(50% - 7px);
+        right: 8px;
+        width: 8px;
+        height: 14px;
+      }
+    }
+  }
+}

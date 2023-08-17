@@ -1,0 +1,33 @@
+.customPagination {
+    background-color: white;
+    align-items: center;
+    p{
+        margin-bottom: 0px;
+    }
+    :global {
+        .MuiTablePagination-actions {
+            display: none !important;
+        }
+        .MuiPagination-ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-left: 20px;
+        }
+        .MuiTablePagination-select.MuiSelect-select{
+            border: 0.5px solid #707070;
+            border-radius: 3px;
+            padding-top: 3px !important;
+            padding-bottom: 3px !important;
+            background-color: white;
+        }
+
+        .MuiInputBase-root.MuiInputBase-colorPrimary{
+            margin-right: 15px !important;
+        }
+
+        .MuiTablePagination-selectLabel{
+            margin-bottom: 0px;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+.pagination {
+  @extend .flex-between;
+  height: 40px;
+  width: 152px;
+  &-number {
+    font-size: $fontSize-big;
+    font-weight: $fw-light;
+    color: $black;
+  }
+  &-control {
+    @extend .flex-center;
+    border-radius: $border-radius-circle;
+    height: 40px;
+    width: 40px;
+    background-color: $gray-light-400;
+    svg {
+      margin-bottom: 3px;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &-prev {
+    svg {
+      margin-right: 3px;
+    }
+  }
+  &-next {
+    svg {
+      margin-left: 3px;
+    }
+  }
+  .disable {
+    opacity: 0.3;
+    cursor: default;
+  }
+}

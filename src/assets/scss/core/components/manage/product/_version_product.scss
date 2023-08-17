@@ -1,0 +1,46 @@
+.version{
+  height: 443px;
+
+  .version-product-wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  
+    .version-product-content{
+      display: flex;
+      gap: 27px;
+
+      .images{
+        
+        .image-version{
+          width: 36px;
+        }
+      }
+  
+      .content-group{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;        
+        .content-group-stock{
+          font-weight: $fw-light;
+          color: $gray;
+        }
+        .content-group-color{
+          font-weight: $fw-light;
+          
+        }
+      }
+  
+      .can-sell{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-bottom: 6px;
+        font-weight: $fw-light;
+        color: $gray;
+
+      }
+    }
+  }
+}

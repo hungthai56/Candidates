@@ -1,0 +1,11 @@
+.stepper-content{
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  p{
+    font-weight: $fw-normal;
+    span{
+      font-weight: $fw-normal;
+    }
+  }
+}

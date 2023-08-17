@@ -1,0 +1,261 @@
+.personal-details-container {
+    padding: 0;
+    .personal-details-important{
+        background-color: #fff;
+    }
+    // row 1
+    .personal-curriculum-vitae {
+        display: flex;
+        // justify-content:space-around;
+        min-height: 210px;
+
+        .personal-image{
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            margin-left: 20px;
+            width: 120px;
+            .personal-image-title {
+                .personal-image-text {
+                    color: $black;
+                    font-size: 14px;
+                    line-height: 16.41px;
+                    font-weight:500;
+                }
+            }
+            .personal-image-tag {
+                margin-top: 18px;
+                text-align: center;
+            }
+        }
+        .personal-private {
+            width: 481px;
+            margin-top: 52px;
+            margin-left: 20px;
+
+            .personal-private-container{
+                display: flex;
+                margin-bottom: 12px;
+                .personal-private-block {
+                    width: 126px;
+                    .personal-private-title{
+                        color: $gray;
+                        font-size: 14px;
+                        line-height: 16.41px;
+                        font-weight:400;
+                    }
+                }
+                .personal-private-sign {
+                    // padding-left: 30px;
+                }
+                .personal-private-text {
+                    color: $black;
+                    font-size: 14px;
+                    line-height: 16.41px;
+                    font-weight:400;
+                }
+            }
+        }
+        .personal-orther {
+            width: 481px;
+            margin-top: 52px;
+            margin-left: 20px;
+
+            .personal-orther-container{
+                display: flex;
+                margin-bottom: 12px;
+                .personal-orther-block {
+                    width: 110px;
+                    margin-right: 60px;
+                    .personal-orther-title{
+                        color: #707070;
+                        font-size: 14px;
+                        line-height: 16.41px;
+                        font-weight:400;
+                    }
+                }
+                .personal-orther-sign {
+                    // padding-left: 30px;
+                }
+                .personal-orther-text {
+                    color: #333333;
+                    font-size: 14px;
+                    line-height: 16.41px;
+                    font-weight:400;
+                }
+            }
+        }
+    }
+
+    // row 2 
+    .personal-info2 {
+        .personal-info2-header {
+            padding: 20px;
+            text {
+                color: $black;
+                font-size: 14px;
+                line-height: 16.41px;
+                font-weight:500;
+            }
+        }
+        .personal-info2-container{
+            padding-bottom: 40px;
+            .personal-info2-block {
+                display: flex;
+                padding-left: 20px;
+                margin-bottom: 12px;
+                .personal-info2-column1 {
+                    display: flex;
+                    .personal-info2-title {
+                        width: 212px;
+                        margin-right: 52px;                       
+                        text{
+                            color: $gray;
+                            font-size: 14px;
+                            line-height: 16.41px;
+                            font-weight:400;
+                        }
+                        
+                    }
+                    .personal-info2-content {
+                        width:270px;
+                        text{
+                            color: #333333;
+                            font-size: 14px;
+                            line-height: 16.41px;
+                            font-weight:400;
+                        }
+                    }
+                }
+                .personal-info2-column2 {
+                    display: flex;
+                    padding-right: 20px;
+                    .personal-info2-title {
+                        width: 250px;
+                        margin-right:9px;
+                        text{
+                            color: $gray;
+                            font-size: 14px;
+                            line-height: 16.41px;
+                            font-weight:400;
+                        }
+                    }
+                    .personal-info2-content {
+                        width:270px;
+                        max-width: 270px;
+                        text{
+                            color: #333333;
+                            font-size: 14px;
+                            line-height: 16.41px;
+                            font-weight:400;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+    // row 3
+    .personal-family{
+        .personal-family-title{
+            padding-top: 21px;
+            margin-left: 20px;
+            margin-bottom: 12px;
+            text {
+                color: $black;
+                font-size: 14px;
+                line-height: 16.41px;
+                font-weight:500;
+            }
+        }
+    }
+
+    // row 4
+    .personal-level{
+        .personal-level-title{
+            padding-top: 21px;
+            margin-left: 20px;
+            margin-bottom: 12px;
+            text {
+                color: $black;
+                font-size: 14px;
+                line-height: 16.41px;
+                font-weight:500;
+            }
+        }
+    }
+
+    // row 5
+    .personal-experience{
+        .personal-experience-title{
+            padding-top: 21px;
+            margin-left: 20px;
+            margin-bottom: 12px;
+            text {
+                color: $black;
+                font-size: 14px;
+                line-height: 16.41px;
+                font-weight:500;
+            }
+        }
+    }
+
+    // row 6
+    .personal-history {
+        .personal-history-title {
+            padding-top: 21px;
+            padding-left: 20px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid $gray-light-400;
+            text {
+                color: $black;
+                font-size: 14px;
+                line-height: 16.41px;
+                font-weight:500;
+            }
+        }
+        .personal-history-text {
+            padding: 20px 0px 20px 25px;
+            text {
+                font-size:12px;
+                line-height:14px;
+                color: $gray;
+                font-weight:300;
+            }
+        }
+    }
+    // row 7
+    .personal-photo {
+        .personal-photo-title {
+            padding-top: 21px;
+            padding-left: 20px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid $gray-light-400;
+            text {
+                color: $black;
+                font-size: 14px;
+                line-height: 16.41px;
+                font-weight:500;
+            }
+        }
+        .personal-photo-text {
+            padding: 20px 0px 20px 25px;
+            text {
+                font-size:12px;
+                line-height:14px;
+                color: $gray;
+                font-weight:300;
+            }
+            display: flex;
+            .personal-photo-text-block {
+                margin-left:10px;
+            }
+            .personal-photo-img {
+                border-radius:3px;
+                border: 1px dashed $gray;
+                width: 235px;
+                height:146px;
+            }
+        }
+    }
+}

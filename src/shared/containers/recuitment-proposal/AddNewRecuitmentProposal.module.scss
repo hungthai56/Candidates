@@ -1,0 +1,9 @@
+.box-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding-bottom: 50px;
+    .w-40{
+        width: 33.3%;
+    }
+}

@@ -1,0 +1,41 @@
+.findx-stepper-vertical {
+  display: flex;
+  flex-direction: column;
+
+  .stepper-vertical-group {
+    display: flex;
+    width: 250px;
+    column-gap: 10px;
+    position: relative;
+    padding-bottom: 40px;
+
+    .stepper_vertical-icon {
+      z-index: 1;
+    }
+
+    .stepper-vertical-title {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      font-size: $fontSize-normal;
+      row-gap: 10px;
+      font-weight: $fw-light;
+      color: $black;
+      line-height: 14px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 100%;
+      background-color: $yellow;
+      top: 0;
+      left: 11px;
+    }
+
+    &:last-child::after {
+      content: none;
+    }
+  }
+}

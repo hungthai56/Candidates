@@ -1,0 +1,153 @@
+.ButtonLoading {
+
+    :global {
+        .MuiButtonBase-root {
+            height: 32px;
+            // padding: 10px 19px;
+            font-size: 14px;
+            font-weight: 500;
+            // color: white !important;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif !important;
+            text-transform: initial;
+            // border: none !important;
+            outline: none !important;
+            box-shadow: none !important;
+        }
+
+        .MuiLoadingButton-loading.Mui-disabled {
+            background-color: rgba(0, 0, 0, 0.12) !important;
+        }
+
+        .MuiButton-containedSuccess {
+            background-color: #138300;
+            color: #ffffff;
+            border-color: transparent;
+
+            &:hover {
+                background-color: #1ba103;
+            }
+            &:disabled{
+                color: rgba(0, 0, 0, 0.26) !important;
+                box-shadow: none !important;
+                background-color: rgba(0, 0, 0, 0.12) !important;
+            }
+        }
+
+        .MuiButton-outlinedSuccess{
+            &:hover {
+                color: #1ba103;
+                background-color: #ffffff;
+                border: 1px solid #1ba103;
+            }
+            &:disabled{
+                color: rgba(0, 0, 0, 0.26) !important;
+                box-shadow: none !important;
+                background-color: rgba(0, 0, 0, 0.12) !important;
+            }
+        }
+    }
+}
+
+.ButtonLoadingRed {
+
+    :global {
+        .MuiButtonBase-root {
+            height: 32px;
+            padding: 10px 19px;
+            font-size: 14px;
+            font-weight: 500;
+            // color: white !important;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif !important;
+            text-transform: initial;
+            // border: none !important;
+            outline: none !important;
+            box-shadow: none !important;
+        }
+
+        .MuiLoadingButton-loading.Mui-disabled {
+            background-color: rgba(0, 0, 0, 0.12) !important;
+        }
+
+        .MuiButton-containedSuccess {
+            background-color: #FF2C00;
+            color: #ffffff;
+            border-color: transparent;
+
+            &:hover {
+                background-color: #ff7070;
+            }
+        }
+
+        .MuiButton-outlinedSuccess{
+            color: #FF2C00;
+            border: 1px solid #FF2C00;
+            &:hover {
+                color: #ff7070;
+                background-color: #ffffff;
+                border: 1px solid #ff7070;
+            }
+            &:disabled{
+                color: rgba(0, 0, 0, 0.26) !important;
+                box-shadow: none !important;
+                background-color: rgba(0, 0, 0, 0.12) !important;
+                border: transparent;
+            }
+        }
+    }
+}
+
+.ButtonLoadingGray {
+
+    :global {
+        .MuiButtonBase-root {
+            height: 32px;
+            padding: 10px 19px;
+            font-size: 14px;
+            font-weight: 500;
+            // color: white !important;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif !important;
+            text-transform: initial;
+            // border: none !important;
+            outline: none !important;
+            box-shadow: none !important;
+        }
+
+        .Mui-disabled {
+            color: rgba(0, 0, 0, 0.26) !important;
+            box-shadow: none !important;
+            background-color: rgba(0, 0, 0, 0.12) !important;
+        }
+
+        .MuiLoadingButton-loading.Mui-disabled {
+            color: rgba(0, 0, 0, 0.26) !important;
+            box-shadow: none !important;
+            background-color: rgba(0, 0, 0, 0.12) !important;
+        }
+
+        .MuiButton-containedSuccess {
+            background-color: #D1D1D1;
+            color: #333333;
+            border-color: transparent;
+
+            &:hover {
+                background-color: #D1D1D1;
+            }
+        }
+
+        .MuiButton-outlinedSuccess{
+            color: #333333;
+            border: 1px solid #D1D1D1;
+            &:hover {
+                color: #333333;
+                background-color: #D1D1D1;
+                border: 1px solid #D1D1D1;
+            }
+            &:disabled{
+                color: rgba(0, 0, 0, 0.26) !important;
+                box-shadow: none !important;
+                background-color: rgba(0, 0, 0, 0.12) !important;
+                border: transparent;
+            }
+        }
+    }
+}

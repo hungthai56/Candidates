@@ -1,0 +1,101 @@
+// check text input
+.validate-check {
+    padding-bottom: 10px;
+    width: 100%;
+    .validate-check-label {
+        text {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: #333333;
+            display:flex;
+            padding-bottom: 5px;
+            p {
+                color: red;
+                padding-left: 3px;
+            }
+        }
+    }
+    .validate-check-input{
+        input {
+            border: 0.5px solid #707070;
+            box-sizing: border-box;
+            border-radius: 3px;
+            padding: 6px 15px;
+            font-size:14px;
+            width: 100%;
+        }
+        input:focus {
+            border-color: green;
+            outline: none;
+        }
+        div {
+            border: 0.5px solid #707070;
+            box-sizing: border-box;
+            border-radius: 3px;
+            padding: 6px 15px;
+            font-size:14px;
+            width: 100%;
+        }
+        // error message
+        p {
+            padding-top: 4px;
+            color: red;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+}
+
+.validate-check-select {
+    padding-bottom: 10px;
+    width: 100%;
+    label {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #333333;
+        display:flex;
+        padding-bottom: 5px;
+        p {
+            color: red;
+            padding-left: 3px;
+        }
+    }
+    .select {
+        outline: none;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #707070;
+      
+        .css-14el2xx-placeholder {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: #707070;
+            padding-left: 5px;
+        }
+        .css-1s2u09g-control {
+            min-height: 35px !important;
+            height: 35px !important;
+        }
+        .css-1s2u09g-control:focus {
+            border-color: green;
+        }
+    }
+    .error-message {
+        span {
+            padding-top: 4px;
+            color: red;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+}
+
+.validate-checkbox {
+    background-color:red;
+}

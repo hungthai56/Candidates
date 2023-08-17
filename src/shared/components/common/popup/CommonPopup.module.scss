@@ -1,0 +1,91 @@
+@import "Common.scss";
+$zIndex-common-popup: 1050;
+$zIndex-overlay: 1040;
+
+.CommonPopup {
+    :global {
+        .wrap_common_popup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: $zIndex-common-popup;
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            outline: 0;
+            align-items: center;
+            justify-content: center;
+
+            .popup-dialog {
+                position: relative;
+                width: auto;
+                pointer-events: none;
+                max-width: 500px;
+                display: flex;
+                -ms-flex-align: center;
+                align-items: center;
+                min-height: calc(100% - 1rem);
+                justify-content: center;
+            }
+
+            .popup-content {
+                position: relative;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                width: auto;
+                pointer-events: auto;
+                background-color: #fff;
+                background-clip: padding-box;
+                border: 1px solid rgba(0, 0, 0, 0.2);
+                border-radius: 0.3rem;
+                outline: 0;
+                animation: scalePopup 0.2s;
+                padding: 0 !important;
+
+                .MuiChip-filledDefault {
+                    border-radius: 4px !important;
+                }
+            }
+
+            &.popup-history-report .popup-content {
+                padding: 0px !important;
+            }
+        }
+
+        .popup-backdrop {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: $zIndex-overlay;
+            width: 100vw;
+            height: 100vh;
+            background-color: #000;
+        }
+
+        .popup-backdrop.show {
+            opacity: 0.5;
+        }
+
+        .modal-backdrop.fade {
+            opacity: 0;
+        }
+
+        @keyframes scalePopup {
+            0% {
+                transform: scale(0.6);
+            }
+
+            50% {
+                transform: scale(0.8);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+    }
+}

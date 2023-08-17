@@ -1,0 +1,47 @@
+.recruitment__detail {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.box__detail {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 3px;
+
+    &-title {
+        margin-bottom: 15px;
+
+        p {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 20px;
+            letter-spacing: 0.168px;
+        }
+    }
+
+    &-view {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 20px;
+
+        .itemBoxInfo {
+            display: flex;
+            align-items: center;
+
+            p:nth-child(1) {
+                margin: 0;
+                min-width: 150px;
+                font-family: Roboto;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px;
+                letter-spacing: 0.14px;
+                color: #707070;
+            }
+        }
+    }
+}

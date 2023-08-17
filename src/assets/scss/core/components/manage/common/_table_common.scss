@@ -1,0 +1,49 @@
+.table {
+  margin-bottom: 0;
+
+  .classNameTable {
+    border: 1px solid $gray-light-400;
+  }
+  .classNameTrHead {
+    background-color: $gray-light;
+    border: 1px solid $gray-light-400;
+
+    .permanent-width {
+      width: 220px;
+      text-align: center;
+    }
+    .permanent-width-amount{
+      width: 120px;
+      text-align: center;
+    }
+  }
+
+  .classNameTrBody {
+    
+    .classNameTd{
+      border: none;
+    }
+    .amount-index {
+      span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 24px;
+        height: 24px;
+        background-color: $gray-light;
+        border-radius: $border-radius-button;
+        vertical-align: middle;
+      }
+    }
+    .text-line {
+      text-align: end;
+      font-weight: $fw-light;
+    }
+    .isCheckbox{
+      margin: auto;
+    }
+    .text-end{
+      text-align: end;
+    }
+  }
+}

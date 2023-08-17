@@ -1,0 +1,9 @@
+.tab_header {
+  position: -webkit-sticky;
+  position: sticky;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  align-items: center;
+}

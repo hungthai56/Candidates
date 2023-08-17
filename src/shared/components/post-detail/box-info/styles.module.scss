@@ -1,0 +1,104 @@
+.itemBoxInfo {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #707070;
+    margin-bottom: 20px;
+
+    p:first-child {
+        width: 20%;
+        min-width: 150px;
+    }
+
+    p:last-child {
+        width: 65%;
+    }
+
+    .itemRenderBox {
+        font-size: 14px;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+        color: #333333;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        margin: 0px 15px;
+        font-weight: 500;
+    }
+
+    &:last-child {
+        margin-bottom: 5px;
+    }
+}
+
+.titleInfoBox {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #333333;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.titleRightBox{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    /* hrm/link */
+
+    color: #0054FC;
+    cursor: pointer;
+
+}
+.columnInfoView{
+    background: #FFFFFF;
+    border: 1px solid #D8D7D7;
+    border-radius: 3px;
+    .columnInfoViewIcon{
+        background: #E9F6EB;
+        border-radius: 100px;
+        min-width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    p{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        /* identical to box height */
+
+        display: flex;
+        align-items: center;
+        text-align: right;
+
+        /* hrm/đefault/hover */
+
+        color: #251400;
+
+    }
+    span{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+        text-align: right;
+
+        /* hrm/neutral/icon */
+
+        color: #707070;
+        margin-top: 12px;
+    }
+}

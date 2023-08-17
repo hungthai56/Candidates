@@ -1,0 +1,24 @@
+{
+    "staff": [
+        { 
+            "personnelCode" :"VNS0123",
+            "employeeCode": "HRM100",
+            "name": "Trần Thị Kim Thanh",
+            "department": "Nhân viên kinh doanh",
+            "position": "Nhân viên",
+            "dayIn": "01/01/2022",
+            "dayBirth": "15/03/1999",
+            "gender": "Nữ"
+        },
+        { 
+            "personnelCode" :"VNS0123",
+            "employeeCode": "HRM100",
+            "name": "Trần Thị Kim Thanh",
+            "department": "Nhân viên kinh doanh",
+            "position": "Nhân viên",
+            "dayIn": "01/01/2022",
+            "dayBirth": "15/03/1999",
+            "gender": "Nữ"
+        }
+    ]
+}

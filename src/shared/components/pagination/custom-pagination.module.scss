@@ -1,0 +1,40 @@
+.customPagination {
+    background-color: white;
+    :global {
+        .MuiTablePagination-actions {
+            display: none !important;
+        }
+        .MuiPagination-ul{
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+    }
+
+
+    :global {
+        .MuiTablePagination-actions {
+            display: none !important;
+        }
+        .MuiPagination-ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-left: 20px;
+        }
+        .MuiTablePagination-select.MuiSelect-select{
+            border: 0.5px solid #707070;
+            border-radius: 3px;
+            padding-top: 3px !important;
+            padding-bottom: 3px !important;
+            background-color: white;
+        }
+
+        .MuiInputBase-root.MuiInputBase-colorPrimary{
+            margin-right: 15px !important;
+        }
+
+        .MuiTablePagination-selectLabel{
+            margin-bottom: 0px;
+        }
+    }
+}

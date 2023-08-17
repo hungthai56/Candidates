@@ -1,0 +1,19 @@
+.button-home-product{
+    background-color: green;
+    color: #ffffff;
+    border: green;
+    padding: 10px 20px;
+    border-radius: 4px;
+    line-height: 0.75;
+    font-size: 0.875rem;
+    text-transform: none;
+    height: 40px;
+    letter-spacing: 0.02857em;
+    text-align: center;
+    transition-duration: 0.4s;
+    &:hover{
+      background-color: #4CAF50;
+      color: white;
+    }
+  }
+ 

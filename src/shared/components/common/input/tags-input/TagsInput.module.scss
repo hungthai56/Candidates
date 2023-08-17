@@ -1,0 +1,70 @@
+.TagsInput {
+    width: 100%;
+    overflow: hidden;
+
+    .TagsInputRender {
+        width: 100%;
+        resize: none;
+        min-height: 30px;
+        width: 100%;
+        border: 1px solid #D7D8D8;
+        outline: none;
+        max-height: 500px !important;
+        padding: 2px 10px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border-radius: 3px;
+        align-items: center;
+
+        input {
+            outline: none;
+            border: none;
+            width: 90px;
+            height: 27px;
+        }
+
+        gap: 5px;
+    }
+
+    .tag {
+        min-width: 30px;
+        width: auto;
+        height: 24px;
+        background: #F2F2F2;
+        border: 0.5px solid #D8D7D7;
+        border-radius: 3px;
+        display: flex;
+        padding: 3px;
+
+        .text {
+            font-size: 14px;
+            line-height: 16px;
+            display: flex;
+            align-items: center;
+            color: #333333;
+            font-weight: 400;
+
+        }
+
+        .icon {
+            margin-left: 5px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            svg {
+                color: #707070;
+            }
+        }
+    }
+}
+
+.error {
+    border-radius: 3px;
+    .TagsInputRender{
+        border: 1px solid #ff2c00;
+        border-radius: 3px;
+    }
+}

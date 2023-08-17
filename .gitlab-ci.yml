@@ -1,0 +1,63 @@
+stages:
+  - build
+  - deploy
+
+Build:
+  stage: build
+  only:
+    - web
+  tags:
+    - node_erp_wa
+  before_script:
+    - whoami
+    - pwd
+    - mkdir -p ../source
+    - rsync -av --progress ./ ../source --exclude .git
+    - cd ../source
+  script:
+    - yarn install 
+    - CI=false yarn build_$ENV
+    - cp -r dist ../recruitment/dist
+  artifacts:
+    expire_in: 1 day
+    paths:
+     - dist
+  environment: $CI_COMMIT_REF_NAME
+
+Deploy:
+  stage: deploy
+  only:
+    - web
+  tags:
+    - node_erp_wa
+  before_script:
+    - echo "Before deploying ..."
+    - eval $(ssh-agent -s)
+    - bash -c 'ssh-add <(echo "$SSH_PRIVATE_KEY")'
+
+    # tạo folder ~/.ssh
+    - mkdir -p ~/.ssh
+
+    # Scan lấy SSH Host key cho địa chỉ IP server
+    # Được kết quả bao nhiêu thì thêm vào file known_hosts
+    - ssh-keyscan -H -p $SSH_PORT $SSH_SERVER_IP >> ~/.ssh/known_hosts
+
+    # Sửa lại quyền của file known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+  script:
+    - echo 'Clearing old file...'
+    - >
+      ssh $SSH_USER@$SSH_SERVER_IP -p $SSH_PORT
+      "cd $SERVER_DIR;
+      rm -f *.js;
+      rm -f *.png;
+      rm -f *.jpg;
+      rm -f *.svg;
+      rm -f *.jpeg;
+      "
+    - echo 'Clear done!'
+    - echo 'Deploying...'
+    - echo 'put -r dist/*' | sftp -oPort=$SSH_PORT $SSH_USER@$SSH_SERVER_IP:$SERVER_DIR &&
+    - echo "Uploaded files to web server!" 
+    - echo 'Deploy done!'
+  environment: $CI_COMMIT_REF_NAME

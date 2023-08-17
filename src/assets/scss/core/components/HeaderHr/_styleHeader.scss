@@ -1,0 +1,74 @@
+.findx-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  z-index: 10;
+}
+.findx-header-manage-leftside {
+  .width-header {
+    width: auto;
+  }
+  .avtUser {
+    background-color: #f7c100;
+    width: 47px;
+    height: 43px;
+    border-radius: 43px;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.menu-left {
+  max-width: 200px;
+}
+// menu
+.menu-left .icon-plus {
+  font-size: 23px;
+  transition: all linear 0.2s;
+  width: 30px;
+  height: 30px;
+  background-color: #ffc107;
+  border-radius: 50px;
+}
+
+.menu-left:hover .icon-plus {
+  cursor: pointer;
+  transform: scale(1.1) rotate(90deg);
+}
+
+.menu-left:hover .menu-left-list {
+  display: block;
+  transition-delay: 0s, 0s, 0.3s;
+}
+
+.menu-left-list {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 0px 12px rgb(0 0 0 / 9%);
+  border-radius: 5px;
+  transition-delay: 0s, 0s, 0.3s;
+  min-width: 180px;
+}
+
+.menu-left-list li {
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.menu-left-list li:hover {
+  background-color: #e9ecef;
+}
+
+.menu-left-list a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+}
+
+.menu-left:hover .menu-left-icon {
+  border-radius: 50px;
+  background-color: #ffff3f;
+  transition: all 0.3s ease 0s;
+}
+

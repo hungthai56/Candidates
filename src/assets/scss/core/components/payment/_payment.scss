@@ -1,0 +1,149 @@
+.payment-normal-wrapper {
+  @extend .h-100;
+  position: relative;
+
+  label,
+  span {
+    margin-bottom: 0px;
+    line-height: $fontSize-normal;
+  }
+
+  .payment-normal-content {
+    max-height: calc(100% - 35px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    .usepoint-input {
+      position: relative;
+      :hover {
+        cursor: pointer;
+      }
+      &-layout {
+        height: 110%;
+        width: 120px;
+        top: 0px;
+        left: 100%;
+        transform: translateX(-100%);
+        position: absolute;
+        z-index: $zIndex-select;
+      }
+    }
+  }
+}
+
+.payment-delivery-wrapper {
+  @extend .h-100;
+  display: flex;
+
+  label,
+  span {
+    margin-bottom: 0px;
+    line-height: $fontSize-normal;
+  }
+
+  .section-div {
+    width: 425px;
+
+    .delivery-section-wrapper {
+      @extend .h-100;
+      @extend .bases__padding-left--10;
+      border-left: 1px solid $gray-light-400;
+      .usepoint-input {
+        position: relative;
+        :hover {
+          cursor: pointer;
+        }
+        &-layout {
+          height: 110%;
+          width: 120px;
+          top: 0px;
+          left: 100%;
+          transform: translateX(-100%);
+          position: absolute;
+          z-index: $zIndex-select;
+        }
+      }
+      .delivery-section-input {
+        label {
+          @extend .bases__width--130;
+          margin-bottom: unset;
+          align-self: center;
+        }
+
+        .content {
+          max-width: unset;
+          flex-grow: 1;
+
+          .input {
+            padding-left: 0px;
+            // input {
+            //   height: $input-height;
+            // }
+          }
+
+          .select-input {
+            height: 21px;
+          }
+
+          .select-border {
+            .select-input {
+              height: $input-height;
+            }
+          }
+        }
+      }
+
+      .update-select-modal {
+        .select-list-modal {
+          top: 25px;
+        }
+      }
+    }
+
+    .payment-section-wrapper {
+      @extend .h-100;
+      position: relative;
+      max-width: 415px;
+
+      .payment-content {
+        max-height: calc(100% - 35px);
+        overflow-x: hidden;
+        overflow-y: auto;
+        .usepoint-input {
+          position: relative;
+          :hover {
+            cursor: pointer;
+          }
+          &-layout {
+            height: 110%;
+            width: 120px;
+            top: 0px;
+            left: 100%;
+            transform: translateX(-100%);
+            position: absolute;
+            z-index: $zIndex-select;
+          }
+        }
+      }
+
+      .salesman-wrapper .select-section .select-salesman {
+        min-width: 200px;
+        max-width: 200px;
+      }
+
+      .guest-info-wrapper .guest-point .point-wrapper {
+        min-width: 200px;
+      }
+    }
+  }
+}
+
+.button-payment-wrap {
+  position: absolute;
+  bottom: 0;
+  @extend .w-100;
+}
+
+hr {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}

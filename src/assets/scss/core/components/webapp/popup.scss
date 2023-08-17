@@ -1,0 +1,18 @@
+.form-double {
+    display: flex;
+    width: calc((100% - 21px) / 2);
+    .form-double-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0px;
+      width: 100%;
+      .double-input {
+        border-bottom-left-radius: 5px;
+        .input-right{
+            border-bottom-left-radius: 0px !important;
+            border-radius: 30px;
+            color: red;
+          }
+      }
+  }
+}

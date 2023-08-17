@@ -1,0 +1,69 @@
+.recruitment__detail {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.box__status {
+    background-color: #ffffff;
+    border-radius: 3px;
+    padding: 5px 20px;
+    border-bottom: 1px solid var(--neutral-4-line, #D8D7D7);
+    &-change{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        column-gap: 10px;
+        .button__icon{
+            background: none;
+            border: none;
+            span{
+                display: block;
+                font-size: 12px;
+                margin-top: 5px;
+            }
+        }
+    }
+}
+
+.box__detail {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 3px;
+
+    &-title {
+        margin-bottom: 15px;
+
+        p {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 20px;
+            letter-spacing: 0.168px;
+        }
+    }
+
+    &-view {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 20px;
+
+        .itemBoxInfo {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+.title__detail{
+    margin: 0;
+    min-width: 150px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.14px;
+    color: #707070;
+}

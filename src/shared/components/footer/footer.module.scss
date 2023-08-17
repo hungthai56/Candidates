@@ -1,0 +1,60 @@
+.findXFooter{
+    padding: 5px 10px;
+    bottom: 0px;
+    z-index: 22;
+    background-color: #ffffff;
+    box-shadow: 0px -2px 4px rgb(0 0 0 / 25%) !important;
+    flex-grow: 1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    // position: -webkit-sticky;
+    min-height: 45px;
+
+    &.positionFix{
+        position: fixed;
+        margin-left: -10px;
+    }
+
+    .buttonBack{
+        width: 220px;
+        a{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: center;
+            color: #707070;
+            text-decoration: none;
+        }
+        cursor: pointer;
+    }
+}
+
+.containerGoBackCommon{
+    display: flex;
+    height: 45px;
+    align-items: center;
+    z-index: 100 !important;
+    cursor: pointer;
+    max-width: 300px;
+    position: fixed;
+    bottom: 0px;
+    .iconGoBack{
+        text-align: center;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 5px;
+        margin-right: 10px;
+    }
+    .titleGoBack{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 16px;
+        text-align: center;
+        color: #707070;
+    }
+}

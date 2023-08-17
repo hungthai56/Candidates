@@ -1,0 +1,51 @@
+.promotion-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .group-input-container {
+    .group-form-wrap {
+      display: flex;
+      flex-direction: column;
+      border-bottom: 1px solid $gray-light-400;
+      margin: 0 -20px;
+      padding: 0 20px;
+
+      .group-form {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+
+
+        .form-item-big {
+          display: flex;
+          flex-direction: column;
+          gap: 7px;
+          width: calc((100% - 20px) / 2);
+        }
+
+        .form-item {
+          display: flex;
+          flex-direction: column;
+          gap: 7px;
+          width: calc((100% - 60px) / 4);
+        }
+      }
+      .group-form-btn {
+        width: 98px;
+        margin-left: auto;
+        height: 34px;
+        margin-bottom: 20px;
+
+        .search-btn {
+          height: 100%;
+        }
+      }
+      
+    }
+    .table{
+      margin-top: 20px;
+    }
+  }
+}

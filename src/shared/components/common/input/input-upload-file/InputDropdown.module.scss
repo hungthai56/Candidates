@@ -1,0 +1,168 @@
+.IconRowDown {
+    position: absolute;
+    top: 0;
+    right: 1px;
+    width: 40px;
+    height: 30px;
+    background: #FFD500;
+    /* hrm/neutral/icon */
+
+    // border: 0.5px solid #d8d7d7;
+    border-radius: 0px 3px 3px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    cursor: pointer;
+    margin-top: 1px;
+}
+
+.InputDropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modalIconRowDown {
+    width: 165px;
+    height: 80px;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.05), 1px 1px 3px rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 32px;
+    padding: 0px;
+    z-index: 1111;
+
+    .modalIconRowDownItem {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 12px 10px;
+        gap: 10px;
+
+        width: 100%;
+        height: 40px;
+        background: #FFF;
+        border-radius: 3px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+        color: #333333;
+
+        &:hover{
+            background: #F7F7F7;
+        }
+    }
+    .modalIconRowDownItemDisable{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 12px 10px;
+        gap: 10px;
+
+        width: 100%;
+        height: 40px;
+        background: #FFF;
+        border-radius: 3px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+        color: #333333;
+        cursor: no-drop !important;
+
+        &:hover{
+            background: #F7F7F7;
+        }
+    }
+}
+
+.inputBorder {
+    width: auto;
+    height: 32px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    border: 0.5px solid #d8d7d7;
+    background-color: white;
+    padding: 0px 5px;
+    border-radius: 5px;
+    overflow: hidden;
+
+    &.focusLine {
+        .inputLine {
+            border-bottom: 0.5px solid #138300;
+        }
+    }
+
+    &.focusBorder {
+        border: 0.5px solid #138300;
+    }
+
+    &.disabledInput {
+        background-color: #f2f2f2;
+
+        input {
+            background-color: #f2f2f2;
+        }
+    }
+
+    &.inputBorderLine {
+        border-radius: 0;
+        border: none;
+    }
+
+    :global {
+
+        span {
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        input {
+            outline: none;
+            border: none;
+            width: 100%;
+            font-weight: 400;
+            line-height: 20px;
+            display: flex;
+            align-items: center;
+            color: black;
+
+            &::placeholder {
+                color: #d8d7d7;
+            }
+        }
+
+        .input-line {
+            border-bottom: 0.5px solid #d8d7d7;
+            background-color: transparent;
+            width: 100%;
+            padding-left: 5px;
+        }
+
+        .input-border {
+            background-color: white;
+            min-height: 30px;
+            width: 100%;
+            box-sizing: border-box;
+            font-weight: 300;
+        }
+    }
+}
+
+.error{
+    border: 1px solid #ff2c00 !important;
+    border-radius: 3px;
+    overflow: hidden,
+}

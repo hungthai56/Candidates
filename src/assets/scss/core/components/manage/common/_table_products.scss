@@ -1,0 +1,35 @@
+.className {
+  
+  .classNameTable{
+
+    .classNameTrHead{
+      border: 1px solid $gray-light-400;
+      background-color: $gray-light;
+
+      .product-name{
+        width: 200px;
+      }
+      .text-line{
+       width: 150px;
+       text-align: end;
+      }
+      .branch{
+        text-align: center;
+      }
+    }
+
+    .classNameTrBody{
+
+      .classNameTd {
+        font-size: $fontSize-normal;
+      }
+      .font-weight{
+        font-weight: $fw-light;
+      }
+
+      .text-end{
+        text-align: end;
+      }
+    }
+  }
+}

@@ -1,0 +1,99 @@
+.paper {
+  width: 100%;
+}
+.paper .text-left {
+  text-align: start;
+}
+.paper .paper-container .time-branch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.paper .paper-container .paper-inner .paper-header {
+  padding-top: 5px;
+}
+.paper .paper-container .paper-inner .paper-header .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  border: 0.5px dashed #333;
+  padding: 15px 0px;
+}
+.paper .paper-container .paper-inner .paper-header .item h5 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 23px;
+}
+.paper .paper-container .paper-inner .paper-header .item h4 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 23px;
+  text-transform: uppercase;
+}
+.paper .paper-container .paper-inner .paper-header .item-middle {
+  padding: 10px 0px;
+}
+.paper .paper-body .customer-infor {
+  padding: 15px 0px;
+}
+.paper-body .customer-infor .name {
+  display: flex;
+  padding-bottom: 10px;
+}
+.paper .paper-body .customer-infor .name p {
+  width: 50%;
+}
+.paper .paper-body table {
+  width: 100%;
+}
+.paper .paper-body table {
+  border: 0.5px solid #333333;
+  border-collapse: collapse;
+}
+.paper .paper-body th {
+  border: 0.5px solid #333333;
+  border-collapse: collapse;
+}
+.paper .paper-body td {
+  border: 0.5px solid #333333;
+}
+.paper .paper-body tbody tr {
+  border: 0.5px dashed #333333;
+}
+.paper .paper-body th {
+  padding: 6px 13px;
+}
+.paper .paper-body td {
+  padding: 6px 13px;
+}
+// footer
+.paper-footer {
+  padding-top: 90px;
+  width: 100%;
+}
+.paper-footer .into-money {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.paper-footer .into-money p {
+  background-color: #fff;
+  width: 180px;
+}
+.paper-footer .into-money:before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-top: 0.5px dashed #333;
+  z-index: -1;
+}
+.paper-footer .thank {
+  width: 100%;
+  text-align: center;
+  margin-top: 60px;
+}

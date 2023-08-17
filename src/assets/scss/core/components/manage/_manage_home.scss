@@ -1,0 +1,185 @@
+.manage {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+
+  .manage-left {
+    width: calc(100% - 280px);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .manage-sale-results {
+      .manage-group {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        gap: 10px;
+
+        .manage-group-item {
+          display: flex;
+          gap: 20px;
+          width: calc(100% / 4);
+          border: 0.5px solid $gray-light-400;
+          padding: 13px 10px;
+          position: relative;
+          border-radius: $border-radius-button;
+
+          .item-content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+          }
+          &:after {
+            content: '';
+            position: absolute;
+            top: 12px;
+            left: 58px;
+            height: 49px;
+            border-left: 0.5px dotted $gray-light-400;
+          }
+        }
+      }
+    }
+
+    .manage-orders {
+      .manage-order-group {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        height: 500px;
+        gap: 10px;
+
+        .manage-order-group-item {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          width: calc(100% / 6);
+          border: 0.5px solid $gray-light-400;
+          border-radius: $border-radius-button;
+          justify-content: center;
+          align-items: center;
+
+          .group-item-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+          }
+        }
+      }
+      .box-decide {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-right: 11px;
+        justify-content: center;
+        align-items: center;
+        .box-manage-decide {
+          width: 24%;
+          display: flex;
+          justify-content: space-between;
+          height: 69px;
+          border-width: 1px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          padding: 5px;
+          margin-right: 5px;
+          margin-bottom: 15px;
+        }
+        .box-name {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          float: left;
+          margin: 6px auto;
+          margin-left: 8px;
+          border-left: 1px dotted #ccc;
+          padding-left: 8px;
+          .box-name_text {
+            font-size: 13px;
+            text-transform: capitalize;
+            color: #333;
+          }
+          .box-number {
+            font-size: 13px;
+            color: #333;
+          }
+        }
+      }
+    }
+
+    .manage-warehouse {
+      .manage-warehouse-content {
+        display: flex;
+        justify-content: space-between;
+        height: 58px;
+        align-items: center;
+        background-color: $gray-light;
+        gap: 10px;
+        padding: 10px 10px;
+        border-radius: $border-radius-button;
+        margin-bottom: 10px;
+
+        .content-left {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+      }
+    }
+  }
+  .manage-right {
+    width: 280px;
+  }
+
+  .group-select {
+    display: flex;
+    width: 220px;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .select-sales {
+    width: 104px;
+  }
+
+  .group-manage-sales {
+    height: 400px;
+  }
+  .manage-orders {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    .manage-order-group {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      height: 500px;
+      gap: 10px;
+
+      .manage-order-group-item {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: calc(100% / 6);
+        border: 0.5px solid $gray-light-400;
+        border-radius: $border-radius-button;
+        justify-content: center;
+        align-items: center;
+
+        .group-item-content {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+        }
+      }
+    }
+  }
+}
+.manager-hr {
+  padding: 10px;
+}

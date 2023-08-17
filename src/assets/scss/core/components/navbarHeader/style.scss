@@ -1,0 +1,163 @@
+.navbar-header-container {
+  margin-right: 20px;
+  max-height: 53px;
+}
+.min-height-28 {
+  min-height: 28px;
+}
+
+.cursor_pointer:hover {
+  cursor: pointer;
+}
+//tabs right desight
+.tab_content-left {
+  margin-left: 20px;
+  .tab-content-header {
+    color: #333333;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .tab-content-name {
+    color: #707070;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+//table desight
+.table-calenda-header {
+}
+.table-loading {
+  position: relative;
+  margin: 0 auto;
+  z-index: 10;
+  top: -734px;
+}
+.table-calenda {
+  margin-top: 12px;
+}
+.table-week {
+  max-height: 680px !important;
+  overflow-y: scroll !important;
+  overflow-x: scroll !important;
+  width: auto !important;
+  position: sticky;
+  bottom: 0 !important;
+}
+.min-height-28 {
+  min-height: 28px;
+}
+
+.cursor_pointer:hover {
+  cursor: pointer;
+}
+
+.icon-button {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px;
+  margin: 0;
+}
+
+.table-tab-title {
+  height: 53px;
+}
+.worknumber {
+  border-bottom: 1px solid #ccc !important;
+}
+.cellNumberMinute {
+  border-bottom: 1px solid #ccc !important;
+}
+.table-fontSize {
+  font-size: 12.44px !important;
+}
+.border-bottom {
+  border-bottom: 1px solid #ccc !important;
+}
+
+.TableCell-adsizeSmall {
+  font-size: 13px;
+}
+
+.width {
+  min-width: 191px !important;
+}
+.css-dsuxgy-MuiTableCell-root {
+  padding: 6px 6px !important;
+}
+//dialog scss
+.css-1nuo49t-MuiButtonBase-root-MuiTab-root {
+  text-transform: none !important;
+  right: 0 !important;
+  padding: 7px 0px !important;
+  left: -11px !important;
+}
+.MuiDialog-paperWidthSm {
+  max-width: 880px !important;
+  width: 100% !important;
+}
+.tab-content-block {
+  display: flex;
+  justify-content: space-between;
+  .left-block {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .right-block {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .Detail-staff-table {
+    display: flex;
+    flex-direction: column;
+    line-height: 35px;
+    font-size: 17px;
+    font-family: 'Roboto';
+    width: 247px;
+    color: #707070;
+  }
+  .Detail-staff-user_infor {
+    display: flex;
+    flex-direction: column;
+    line-height: 35px;
+    font-size: 16px;
+    font-family: 'Roboto';
+    width: 230px;
+    color: #333;
+  }
+  .Detail-staff-name {
+    display: flex;
+    flex-direction: column;
+    line-height: 35px;
+    font-size: 17px;
+    font-family: 'Roboto';
+    width: 247px;
+    color: #707070;
+  }
+  .Detail-staff-user_time {
+    display: flex;
+    flex-direction: column;
+    line-height: 35px;
+    font-size: 16px;
+    font-family: 'Roboto';
+    width: 230px;
+    color: #333;
+  }
+}
+.modal-btn-table {
+  background-color: #fff !important;
+  border: none !important;
+}
+.tabs-name {
+  color: #000 !important;
+  font-size: 15px !important;
+}
+.block-table-acd {
+  padding: 10px 20px !important;
+}

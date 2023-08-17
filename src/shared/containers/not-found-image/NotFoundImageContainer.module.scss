@@ -1,0 +1,55 @@
+.NotFoundImageWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.FormWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    // padding: 30px;
+    min-width: 770px;
+}
+.InputWrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+.FormButtonWrapper {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+    // padding: 5px 0;
+}
+
+.title-image {
+    font-size: 14px;
+    color: #707070;
+    line-height: 22px;
+}
+
+.custom-icon-upload {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+
+    p {
+        margin-bottom: 0px;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        /* identical to box height; or 143% */
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.012em;
+
+        /* Neutral/5 */
+
+        color: #acacac;
+    }
+}

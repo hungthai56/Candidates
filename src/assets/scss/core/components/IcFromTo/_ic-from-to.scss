@@ -1,0 +1,25 @@
+.ic-from-to{
+  width: 16px;
+  height: 62px;
+  position: relative;
+
+  .green{
+    position: absolute;
+    top: 0;
+  }
+
+  .red{
+    position: absolute;
+    bottom: 0;
+    
+  }
+
+  &:before{
+    content: '';
+    position: absolute;
+    border: 1px dashed $gray-light-400;
+    top: 20px;
+    bottom: 19px;
+    left: 7px;
+  }
+}

@@ -1,0 +1,35 @@
+.notification-confirm{
+  width: 502px;
+  height: 239px;
+  position: relative;
+  padding: 30px;
+
+  .notification-popup-header-title{
+    font-size: $fontSize-big;
+    width: 100%;
+    font-weight: $fw-normal;
+    line-height: 22px;
+  }
+  .close-popup-btn{
+    position: absolute;
+    top: 28px;
+    right: 30px;
+  }
+  .text-popup{
+    font-size:$fontSize-normal;
+    font-weight: $fw-light;
+  }
+  .notification-popup-footer{
+    width: 100%;
+
+    .btn-footer{
+      display: flex;
+      justify-content: space-between;
+
+      .btn{
+        width: calc(100% - 22px);
+      }
+    }
+  }
+  
+}
